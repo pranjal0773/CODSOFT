@@ -1,0 +1,399 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: auto;
+}
+
+.nav{
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0px 8px darkslategray;
+    z-index: 10;
+
+}
+
+.nav img{
+    padding: 0.75rem 0 0.5rem 3rem;
+    height: 7rem;
+    width: 8rem;
+}
+
+.nav .home-page-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+.home-page-cont a{
+    padding-left: 1.75rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.09rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.home-page-cont i{
+    padding-right: 0.2rem;
+}
+
+.home-page-cont a:hover{
+    color: orangered;
+}
+
+
+.short-intro{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images-2/bg.jpg);
+    background-size: cover;
+}
+
+.short-intro img{
+    height: 20rem;
+    width: 27rem;
+    margin: 11rem 10rem 8rem 0;
+    border-radius: 12px;
+}
+
+.info{
+    margin: 12rem 0 8rem 10rem;
+}
+
+.info span{
+    color: orangered;
+}
+
+.info p{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.info h1{
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: -1rem;
+}
+
+.info h2{
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 0.55rem;
+}
+
+.info a{
+    font-size: 1.75rem;
+    padding-right: 1rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.info a:hover{
+    color: orangered;
+}
+
+.info a:hover{
+    margin-top: -0.5rem;
+}
+
+#about{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./images-2/bg2.jpg);
+    background-size: cover;
+}
+
+#about .img{
+    height: 30rem;
+    max-width: 100%;
+    width: 30rem;
+    margin: 8rem 0 0 4rem; 
+}
+
+.info-1{
+    text-align: justify;
+    max-width: 100%;
+    width: 50rem;
+    margin: 3rem 9rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.info-1 h2{
+    margin-bottom: 0;
+}
+
+.info-1 p{
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.info-1 h2 span{
+    text-decoration: underline orangered;
+    text-decoration-thickness: 0.39rem;
+}
+
+.info-1 .btn{
+    background-color: orangered;
+    color: #fff;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info-1 .btn:hover{
+    font-size: 1.7rem;
+}
+
+#skills{
+    padding-bottom: 5rem;
+    color: #fff;
+}
+
+#skills h1{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    text-decoration: underline orangered;
+    text-align: center;
+}
+
+.indiv {
+    width: 20rem;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: transparent;
+    box-shadow: 4px 2px 5px orangered;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    font-size: 2.25rem;
+}
+
+.crsr {
+    background: orangered;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.indiv:hover {
+    border: none;
+}
+
+.indiv:hover span {
+    width: 100%;
+}
+
+.div{
+    margin: 0 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#projects{
+    color: #fff;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+#projects h1{
+    font-size: 4rem;
+    text-decoration: underline orangered;
+    text-align: center;
+    color: #fff;
+}
+
+.project-card{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.pro-container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.pro-container .card{
+    position: relative;
+    max-width : 300px;
+    height : 500px;  
+    background-color : #313131;
+    margin : 10px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(255,69,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+
+.pro-container .card:hover{
+    box-shadow : 0 5px 40px rgba(255,69,0,0.5);
+}
+
+.pro-container .card .pro-img img{
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.pro-container .card .pro-img img:hover{
+    box-shadow : 0 5px 20px rgba(0,0,0,0.9);
+}
+
+.pro-container .card:hover{
+    margin-top: -1rem;
+}
+
+.pro-container .card .pro-content{
+    position: relative;
+    top: 1px;
+    padding: 10px 15px;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+
+.pro-container .card .pro-content p{
+    opacity: 0.8;
+    font-size: 1.05rem;
+}
+
+
+#contact{
+    color: #fff;
+    padding: 4rem 8rem 4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images-2/bg.jpg);
+    background-size: cover;
+}
+
+.info-2{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+
+
+.content h2{
+    margin-bottom: -0.5rem;
+    font-size: 3rem;
+}
+
+.content h2 span{
+    text-decoration: underline orangered;
+    text-decoration-thickness: 0.39rem;
+}
+
+.content .email{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.7;
+    width: 27rem;
+}
+
+.content .phone{
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.content p i{
+    padding-right: 0.35rem;
+    color: orangered;
+    font-size: 1.5rem;
+}
+
+.content a{
+    font-size: 1.75rem;
+    padding-right: 1rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.content a:hover{
+    color: orangered;
+}
+
+.info-2 .contact-info{
+    width: 45rem;
+    margin-bottom: 1rem;
+    background-color: #313131;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+#name-cont{
+    height: 3rem;
+}
+
+#email-cont{
+    height: 3rem;
+}
+
+textarea{
+    height: 15rem;
+    justify-content: first baseline;
+}
+
+#btn{
+    background-color: orangered;
+    color: #fff;
+    height: 3rem;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background-color: green;
+}
+

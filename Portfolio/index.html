@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="nav">
+            <img src="./images-2/p-logo.png">
+            <div class="home-page-cont">
+                <a href="#" class="home"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="about"><i class="fa-solid fa-user"></i> About Me</a>
+                <a href="#skills" class="skills"><i class="fa-solid fa-graduation-cap"></i> Skills</a>
+                <a href="#projects" class="projects"><i class="fa-solid fa-folder-open"></i> Projects</a>
+                <a href="#contact" class="contact"><i class="fa-solid fa-phone"></i> Contact</a>
+            </div>
+        </nav>
+
+        <div class="home-page">
+            <div class="short-intro">
+                <div class="info">
+                    <p>Hii, I'm</p>
+                    <h1><span>P</span>ranjal</h1>
+                    <h2>A <span>F</span>rontend <span>D</span>eveloper</h2>
+                    <a href="https://www.linkedin.com/in/pranjal-prajapati-135737269/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/pranjal0773" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <img src="./images-2/web-deve.jpg">
+            </div>
+        </div>
+        
+        <div id="about">
+            <img src="./images-2/me.png" class="img">
+            <div class="info-1">
+                <h2><span>Ab</span>out me</h2>
+                <p>I am 3rd year Computer science student, passionate about Frontend development having an experience of building web based aaplications with HTML CSS and JavaScript and some other cool libraries and frameworks like Bootstrap and Tailwind.</p>
+                <a href="./images-2/Pranjal.resume.pdf" download="Resume"><button class="btn">Resume</button></a>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h1>Skills</h1>
+            <div class="div">
+                <div class="indiv"><span class="crsr"></span>HTML</div>
+                <div class="indiv"><span class="crsr"></span>CSS</div>
+                <div class="indiv"><span class="crsr"></span>JavaScript</div>
+                <div class="indiv"><span class="crsr"></span>SQL</div>
+                <div class="indiv"><span class="crsr"></span>Bootstrap</div>
+                <div  class="indiv"><span class="crsr"></span>Tailwind</div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="project-card">
+                <div class="pro-container">
+                    <div class="card">
+                        <div class="pro-img">
+                            <img src="./images-2/project-img-1.png">
+                        </div>
+                        <div class="pro-content">
+                            <h3>Spotify Clone</h3>
+                            <p>Built Spotify Clone using HTML and CSS which helped in exploring more about Frontend Development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-container">
+                    <div class="card">
+                        <div class="pro-img">
+                            <img src="./images-2/project-img-2.jpg">
+                        </div>
+                        <div class="pro-content">
+                            <h3>EaseWeather</h3>
+                            <p>Built a web based Weather Application that shows relevent details of weather of a place. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-container">
+                    <div class="card">
+                        <div class="pro-img">
+                            <img src="./images-2/project-img-3.png">
+                        </div>
+                        <div class="pro-content">
+                            <h3>Netflix Clone</h3>
+                            <p>Built Netflix Clone to understand various concepts involved in Frontend Web Development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+            <div id="contact">
+                <div class="content">
+                    <h2><span>Con</span>tact Me</h2>
+                    <p class="email"><i class="fa-solid fa-envelope"></i> pranjaldaksh2003@gmail.com</p>
+                    <p class="phone"><i class="fa-solid fa-phone"></i> 9315433453</p>
+                    <a href="https://www.linkedin.com/in/pranjal-prajapati-135737269/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/pranjal0773" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="info-2">
+                    <form>
+                        <input type="text" id="name-cont" class="contact-info" placeholder="Your Name">
+                        <input type="text" id="email-cont" class="contact-info" placeholder="Your Email">
+                        <textarea name="message" rows="6" class="contact-info" placeholder="Your message"></textarea>
+                        <button type="submit" id="btn">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+
+
+    </div>
+</body>
+</html>
