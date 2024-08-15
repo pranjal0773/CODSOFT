@@ -1,9 +1,99 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 main{
-    background: url(./images/bg.avif);
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.heading h1{
+    letter-spacing: 7px;
+    max-width: 650px;
+    position: absolute; 
+    top: 5%;
+    left: 50%; 
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 4px solid transparent;
+    text-shadow: 1px 1px 5px darkolivegreen;
+    box-shadow: 1px 1px 10px rgba(245, 245, 245, 0.281);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.heading h1:hover{
+    letter-spacing: 9px;
+    border: 4px solid black;
+    background-color: transparent;
+    color: black;
+    text-shadow: 1px 1px 5px whitesmoke;
+    box-shadow: 5px 5px  5px black;
+}
+
+.container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    border: 1px solid rgba(113, 115, 119, 0);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 15px rgba(113, 115, 119, 0.187) inset;
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px, 3px, 15px rgba(84, 84,84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #fff;
+    opacity: 0.7;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: -4px -4px 10px rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+.eql-btn{
+    background-color: #fb7c14;
+    box-shadow: 0px 5px 15px rgba(113, 115, 119, 0.187);
+}
+
+.operator{
+   color: #6dee0a; 
 }
